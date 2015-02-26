@@ -12,6 +12,14 @@
 	opacity: 0.9;
 }
 
+.navbar-brand {
+}
+
+.navbar-nav {
+	margin-left: 5%;
+}
+
+
 #title {
 	text-align: center;
 	color: #FFF;
@@ -40,6 +48,10 @@
 	font-size: 20px;	
 }
 
+.panel-body a {
+	text-decoration: underline;
+}
+
 .panel-heading h4:after {\
 	width: 100%;
     font-family:'Glyphicons Halflings';
@@ -50,4 +62,21 @@
 
 .collapsed h4:after {
     content:"\e080";
+}
+
+#request-warning {
+	text-align: center;
+}
+
+#request_form {
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#popup_form,
+#popup_form_wrapper,
+#popup_form_background {
+  transition: all 0.3s;
 }

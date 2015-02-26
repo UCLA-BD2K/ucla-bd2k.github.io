@@ -38,10 +38,10 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-<!--       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
+      <ul class="nav navbar-nav">
+        <li><a href="#" class="popup_form_open">Repository Submission Form</a></li>
+        <!-- <li><a href="#">Link</a></li> -->
+<!--         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">Action</a></li>
@@ -52,8 +52,8 @@
             <li class="divider"></li>
             <li><a href="#">One more separated link</a></li>
           </ul>
-        </li>
-      </ul> -->
+        </li> -->
+      </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
@@ -69,7 +69,7 @@
 
   <div class="panel-group" id="accordion">
     <div class="panel panel-default" id="panel1">
-        <a data-toggle="collapse" data-target="#collapseOne" href="#collapseOne" class="collapsed">
+        <a data-toggle="collapse" data-target="#collapseOne" href="" class="collapsed" onclick="return false; ">
         <div class="panel-heading">
         <h4 class="panel-title">
           API
@@ -91,7 +91,7 @@
     </div>
 
     <div class="panel panel-default" id="panel2">
-        <a data-toggle="collapse" data-target="#collapseTwo" href="#collapseTwo" class="collapsed">
+        <a data-toggle="collapse" data-target="#collapseTwo" href="" class="collapsed" onclick="return false; ">
         <div class="panel-heading">
         <h4 class="panel-title">
           UCLA Tools
@@ -101,13 +101,22 @@
         </a>
         <div id="collapseTwo" class="panel-collapse collapse">
             <div class="panel-body">
-              Tools and Description.
+            <h4>COPaKB</h4> 
+            COPaKB was first conceived in 2008 and released to the scientific community in 2009, demonstrating the longstanding commitment of the UCLA investigator team to Data Science. COPaKB is a cardiac specific knowledgebase that provides a unique resource for remote-access protein identification and relational data analysis between omics datasets and existing phenotype and biomedical knowledge.
+            <br />
+            <a href="https://github.com/UCLA-BD2K/COPaKB" target="_blank">View Repository</a>
+            <br />
+            <br />
+            <h4>ProTurn</h4> 
+            ProTurn is a Java application for automated calculation of protein turnover from large-scale deuterium oxide labeling mass spectrometry experiments.
+            <br />
+            <a href="https://github.com/UCLA-BD2K/ProTurn" target="_blank">View Repository</a>
             </div>
         </div>
     </div>
 
     <div class="panel panel-default" id="panel3">
-        <a data-toggle="collapse" data-target="#collapseThree" href="#collapseThree" class="collapsed testtest">
+        <a data-toggle="collapse" data-target="#collapseThree" href="" class="collapsed testtest" onclick="return false; ">
         <div class="panel-heading">
         <h4 class="panel-title">
           EBI Tools
@@ -117,7 +126,10 @@
         </a>
         <div id="collapseThree" class="panel-collapse collapse">
             <div class="panel-body">
-              Tools and Description.
+            <h4>Reactome</h4>
+            Reactome is a free, open-source, curated and peer reviewed pathway database. Our goal is to provide intuitive bioinformatics tools for the visualization, interpretation and analysis of pathway knowledge to support basic research, genome analysis, modeling, systems biology and education.
+            <br />
+            <a href="https://github.com/reactome" target="_blank">View Repository</a>
             </div>
         </div>
     </div>
@@ -138,10 +150,17 @@
         </div>
     </div>
   </div>
+
+  <div id="popup_form">
+    <iframe src="https://docs.google.com/forms/d/19Jotvd4vldQ5wm3UCqchE4UtlInYInAj0KoJEhufypc/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    <br />
+    <button class="popup_form_close">Close</button>
+  </div>
   
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/jquery.popupoverlay.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/repo.js"></script>
