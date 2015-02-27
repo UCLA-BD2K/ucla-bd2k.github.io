@@ -80,3 +80,9 @@
 #popup_form_background {
   transition: all 0.3s;
 }
+
+#github_form,
+#github_form_wrapper,
+#github_form_background {
+  transition: all 0.3s;
+}

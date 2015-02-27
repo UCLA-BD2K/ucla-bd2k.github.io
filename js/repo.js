@@ -3,4 +3,5 @@ $(document).ready(function () {
 
 	// Initialize the plugin
       $('#popup_form').popup();
+      $('#github_form').popup();
 });
